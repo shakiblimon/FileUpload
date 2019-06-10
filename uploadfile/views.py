@@ -15,6 +15,6 @@ class FileUploadView(APIView):
         :param kwargs:
         :return:
         """
-        file_url = base_64_file(data=request.data['user_photo'])
+        file_url = base_64_file(data=request.data['user_photo']) # Name define dy request end
         print(file_url)
         return Response({"Successfully Uploaded"}, status=status.HTTP_200_OK)
