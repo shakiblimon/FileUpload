@@ -17,4 +17,4 @@ class FileUploadView(APIView):
         """
         file_url = base_64_file(data=request.data['user_photo'])
         print(file_url)
-        return Response({"OKK"}, status=status.HTTP_200_OK)
+        return Response({"Successfully Uploaded"}, status=status.HTTP_200_OK)
